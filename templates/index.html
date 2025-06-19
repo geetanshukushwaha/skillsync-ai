@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync AI - Optimize Your Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}" class="logo">SkillSync AI</a>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Optimize Your Resume with AI</h1>
+            <p>Get instant AI-driven insights on your resume and match it with job descriptions effortlessly.</p>
+            <a href="{{ url_for('resume_match') }}" class="btn">Check Your Resume Score</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose SkillSync AI?</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3> Smart Scoring</h3>
+                <p>Get an instant AI-based score aligned with your job description.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Actionable Insights</h3>
+                <p>Targeted suggestions to improve skills, projects, and experience.</p>
+            </div>
+            <div class="feature-box">
+                <h3>AI Resume Tailoring</h3>
+                <p>Adapt your resume to any job using intelligent content matching.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About SkillSync AI</h2>
+        <p>SkillSync AI uses advanced language models to help job seekers optimize their resumes by scoring relevance to job descriptions and providing tailored improvement suggestions.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Have questions? Contact us for more information.</p>
+        <a href="#" class="btn" onclick="alert('Contact form will be available soon!')">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillSync AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🔥 Navigation Bar - Identical on Both Pages */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+/* 🔥 Logo - Perfectly Centered & Clickable */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0073e6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 100%;
+    line-height: 70px;
+}
+
+.logo:hover {
+    color: #005bb5;
+}
+
+/* 🔥 Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+/* 🔥 Button in Navbar */
+nav .btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav .btn:hover {
+    background: #cc5200;
+}
+
+/* 📌 Fix for Both Pages - Ensures Same Alignment */
+nav, .logo, nav ul, nav .btn {
+    display: flex;
+    align-items: center;
+}
+
+/* 🎯 Hero Section - Fullscreen Centered */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85vh;
+    background: linear-gradient(to right, #0073e6, #005bb5);
+    color: white;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* 📌 Call-to-Action Button */
+.hero .btn {
+    background: #29b8c2;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #29b8c2;
+}
+
+/* 🔥 Features Section - Enhanced Layout */
+.features {
+    padding: 100px 10%;
+    text-align: center;
+    background: #fff;
+}
+
+.features h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* 📌 Feature Box Grid - Perfect Alignment */
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increased spacing between boxes */
+    margin-top: 40px;
+    flex-wrap: nowrap; /* Ensures all boxes stay in one row */
+}
+
+/* 📌 Feature Boxes - Bigger, Cleaner, & More Modern */
+.feature-box {
+    background: #f8f9fa;
+    padding: 40px;
+    width: 30%; /* Increased width to make them larger */
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box h3 {
+    font-size: 1.6rem;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.feature-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* 🔥 Resume Match Page Styling */
+.resume-match-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-match-container h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.resume-match-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.resume-match-container input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.resume-match-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #2e73c7;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-match-container button:hover {
+    background: 2e73c7;
+    transform: scale(1.02);
+}
+
+/* 🔥 About & Contact Section - Balanced Layout */
+.about, .contact {
+    text-align: center;
+    padding: 80px 10%;
+    background: #f4f4f4;
+}
+
+/* 📌 Ensures both sections maintain proper width & spacing */
+.about h2, .contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p, .contact p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* 🔥 Contact Button - Consistent Styling */
+.contact .btn {
+    background: #0073e6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #005bb5;
+}
+
+/* 📌 Improved Spacing Between Sections */
+.about {
+    margin-bottom: 60px;
+}
+
+/* 🔥 Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+/* Results Container */
+.results-container {
+    margin-top: 40px;
+}
+
+.result-box {
+    background-color: #ffffff;
+    border-left: 5px solid #1f73b7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.result-box h3 {
+    margin: 0 0 10px;
+    color: #1f73b7;
+    font-size: 18px;
+}
+
+.result-box p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.result-box ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.result-box ul li {
+    margin-bottom: 4px;
+    color: #444;
+    font-size: 14.5px;
+}

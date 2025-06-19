@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matching</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="resume-match-page">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('index') }}" class="logo">SkillSync AI</a>
+    </nav>
+
+    <!-- Resume Match Section -->
+    <div class="resume-match-container">
+        <h2>Resume Matching System</h2>
+        
+        <form action="{{ url_for('resume_match') }}" method="POST" enctype="multipart/form-data">
+            <label for="job_description">Paste Job Description:</label>
+            <textarea name="job_description">{{ job_description }}</textarea>
+
+            <label for="resumes">Upload Resumes (PDF Only):</label>
+            <input type="file" id="resumes" name="resumes" multiple accept=".pdf" required>
+
+            <button type="submit">Check Match Score</button>
+        </form>
+
+        {% if results %}
+        <div class="results-container">
+            <h3>Matching Results</h3>
+            {% for filename, score, summary, suggestions in results %}
+
+                <div class="result-box">
+                    <h3>{{ filename }}</h3>
+                    <p><strong>Score:</strong> {{ score }}</p>
+
+                    {% if summary %}
+                        <p><strong>Summary:</strong> {{ summary }}</p>
+                    {% endif %}
+
+                    {% if suggestions %}
+                        <p><strong>Suggestions:</strong></p>
+                        <ul>
+                            {% for suggestion in suggestions %}
+                                <li>{{ suggestion }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
