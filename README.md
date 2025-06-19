@@ -14,7 +14,7 @@ SkillSync AI is an AI-powered resume scoring and enhancement web app that analyz
 
 * **Backend**: Python, Flask
 * **Frontend**: HTML, CSS, JavaScript
-* **AI/ML**: Groq LLM API (GPT-based)
+* **AI/ML**: Groq LLM API (Meta's LLaMA 3)
 * **Parsing**: PDF/Text extraction using `PyMuPDF (fitz)`
 * **Deployment**: Render
 * **Templating**: Jinja2
