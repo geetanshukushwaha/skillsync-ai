@@ -1,4 +1,6 @@
 /* General Styles */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -150,11 +152,12 @@ nav, .logo, nav ul, nav .btn {
     justify-content: center;
     gap: 50px; /* Increased spacing between boxes */
     margin-top: 40px;
-    flex-wrap: nowrap; /* Ensures all boxes stay in one row */
+    flex-wrap: wrap; /* Ensures all boxes stay in one row */
 }
 
 /* 📌 Feature Boxes - Bigger, Cleaner, & More Modern */
 .feature-box {
+    flex: 1 1 280px;
     background: #f8f9fa;
     padding: 40px;
     width: 30%; /* Increased width to make them larger */
@@ -321,4 +324,46 @@ footer {
     margin-bottom: 4px;
     color: #444;
     font-size: 14.5px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* reduced from 3rem */
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .features h2,
+  .about h2,
+  .contact h2 {
+    font-size: 1.8rem; /* reduced from 2.5rem+ */
+  }
+
+  .feature-box h3 {
+    font-size: 1.2rem; /* smaller box headings */
+  }
+
+  .feature-box p {
+    font-size: 0.95rem;
+  }
+
+  .resume-match-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .result-box h3 {
+    font-size: 1rem;
+  }
+
+  .result-box p,
+  .result-box ul li {
+    font-size: 0.9rem;
+  }
 }
