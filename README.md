@@ -74,7 +74,7 @@ SkillSync-AI/
 ## 📦 Deployment
 
 * Hosted for free on [Render](https://render.com/)
-* Free tier used with auto spin-down enabled to conserve resources
+* Can access via [SkillSync AI](https://skillsync-ai-5bcg.onrender.com/)
 
 ## 📌 Limitations
 
