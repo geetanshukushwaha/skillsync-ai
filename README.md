@@ -89,6 +89,6 @@ SkillSync-AI/
 
 ## 👨‍💻 Author
 
--Made by **Geetanshu Kumar Kushwaha**
--Feel free to connect via GitHub or explore more of my projects!
+Made by **Geetanshu Kumar Kushwaha**  
+Feel free to connect via GitHub or explore more of my projects!
 
